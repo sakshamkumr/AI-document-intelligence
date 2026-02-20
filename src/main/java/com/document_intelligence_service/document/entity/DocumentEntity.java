@@ -28,8 +28,9 @@ public class DocumentEntity {
     @Column(name = "uploaded_by")
     private String uploadedBy;
 
+    @Column(name = "status")
     private String status;
 
-    @Column(name = "created_at")
+    @Column(name = "created_at", insertable = false, updatable = false)
     private Instant createdAt;
 }

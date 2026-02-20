@@ -22,9 +22,9 @@ public class ChunkEntity {
     @Column(name = "chunk_index")
     private Integer chunkIndex;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(name = "content")
     private String content;
 
-    @Column(name = "created_at")
+    @Column(name = "created_at", insertable = false, updatable = false)
     private Instant createdAt;
 }
